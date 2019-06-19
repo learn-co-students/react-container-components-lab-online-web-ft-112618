@@ -13,7 +13,8 @@ const Review = ({ headline, byline, link, summary_short }) => {
     )
 }
 
-const MovieReviews = ({ reviews }) => <div className="review-list">{reviews.map(Review)}</div>
+const MovieReviews = ({ reviews }) =>
+    <div className="review-list">{reviews.map(Review)}</div>
 
 MovieReviews.defaultProps = {
     reviews: []
